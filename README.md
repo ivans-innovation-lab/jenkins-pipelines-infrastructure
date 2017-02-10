@@ -1,11 +1,11 @@
 
-# Jenkins Pipes Infrastructure
+# Jenkins Pipelines Infrastructure
 
 This is meant to be a minimal example showing how to set up Jenkins 2.x with the [Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Plugin) to support the following scenario:
 
- * all jobs are under version control and described via [Job-DSL](https://github.com/jenkinsci/job-dsl-plugin/wiki), see the [jenkins-pipes-jobs](https://github.com/tknerr/jenkins-pipes-jobs) repo
- * there is a [seed-job](https://github.com/tknerr/jenkins-pipes-infra/blob/master/seedJob.xml) which runs periodically to ensure the aforementioned jobs exist in Jenkins
- * each project to be built by these jobs defines its own pipeline via [Pipeline-DSL](https://jenkins.io/doc/book/pipeline/syntax/) in a `Jenkinsfile`, see the  [jenkins-pipes-helloworld](https://github.com/tknerr/jenkins-pipes-helloworld) example
+ * all jobs are under version control and described via [Job-DSL](https://github.com/jenkinsci/job-dsl-plugin/wiki), see the [jenkins-pipelines-jobs](https://github.com/ivans-innovation-lab/jenkins-pipelines-jobs) repo
+ * there is a [seed-job](https://github.com/ivans-innovation-lab/jenkins-pipes-infra/blob/master/seedJob.xml) which runs periodically to ensure the aforementioned jobs exist in Jenkins
+ * each project to be built by these jobs defines its own pipeline via [Pipeline-DSL](https://jenkins.io/doc/book/pipeline/syntax/) in a `Jenkinsfile`, see the  [my-company-monolithic-web](https://github.com/ivans-innovation-lab/my-company-monolithic-web) example
 
 
 ## Run It
