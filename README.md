@@ -10,13 +10,13 @@ This is meant to be a minimal example showing how to set up Jenkins 2.x with the
 
 ## Run It
 
-Create the docker image and run it, with port 8080 forwarded to the host:
+Create the docker image and run it, with port 8080 forwarded to the host 9090:
 
 ```
 $ docker build -t jenkins-pipelines .
-$ docker run -it --rm -p 8080:8080 jenkins-pipelines
+$ docker run -it --rm -p 9090:8080 jenkins-pipelines
 ```
 
-Once Jenkins is started you should see at least the seed-job on [http://localhost:8080](http://localhost:8080).
+Once Jenkins is started you should see at least the seed-job on [http://localhost:9090](http://localhost:9090).
 
 If it has not run yet, simply trigger it and see how the actual jobs get created.
