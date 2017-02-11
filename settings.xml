@@ -2,7 +2,12 @@
 <settings>
 	<servers>
 		<server>
-			<id>artifactory-local</id>
+			<id>artifactory-local-snapshots</id>
+			<username>admin</username>
+			<password>password</password>
+		</server>
+		<server>
+			<id>artifactory-local-releases</id>
 			<username>admin</username>
 			<password>password</password>
 		</server>
