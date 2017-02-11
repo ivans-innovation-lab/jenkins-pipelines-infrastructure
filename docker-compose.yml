@@ -1,0 +1,15 @@
+version: "2"
+services:
+  jenkins:
+    build:
+      context: .
+    ports:
+      - "9090:8080"
+    volumes:
+      - /var/jenkins_home
+    links:
+      - artifactory
+  artifactory:
+    image: jfrog-docker-registry.bintray.io/artifactory/artifactory-oss:latest
+    ports:
+      - "9091:8081"
