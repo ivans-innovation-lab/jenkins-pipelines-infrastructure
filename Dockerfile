@@ -8,11 +8,14 @@ RUN echo 2.0 > /usr/share/jenkins/ref/jenkins.install.InstallUtil.lastExecVersio
 RUN install-plugins.sh \
   job-dsl:1.57 \
   git:3.0.1 \
-  workflow-aggregator:2.5
+  workflow-aggregator:2.5 \
+  maven-plugin:2.14
+
 
 # create the seed job which spawns all other jobs
 RUN mkdir -p /usr/share/jenkins/ref/jobs/seed-job
 COPY seedJob.xml /usr/share/jenkins/ref/jobs/seed-job/config.xml
+COPY init.groovy /usr/share/jenkins/ref/init.groovy
 
 # allow to pass in the jobs repo as a --build-arg
 ARG jobs_repo=https://github.com/ivans-innovation-lab/jenkins-pipelines-jobs.git
