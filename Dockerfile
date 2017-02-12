@@ -16,6 +16,7 @@ RUN install-plugins.sh \
 RUN mkdir -p /usr/share/jenkins/ref/jobs/seed-job
 COPY seedJob.xml /usr/share/jenkins/ref/jobs/seed-job/config.xml
 COPY init.groovy /usr/share/jenkins/ref/init.groovy
+COPY settings.xml /usr/share/jenkins/settings.xml
 
 # allow to pass in the jobs repo as a --build-arg
 ARG jobs_repo=https://github.com/ivans-innovation-lab/jenkins-pipelines-jobs.git
