@@ -28,3 +28,7 @@ If it has not run yet, simply trigger it and see how the actual jobs get created
 Artifactory is available on [http://localhost:9091](http://localhost:9091)
 
 Please note that parrent maven [pom](https://github.com/ivans-innovation-lab/my-company-common/blob/master/pom.xml) file is configured to use the Artifactory.
+
+## References and further reading
+
+-  [Maven Release Plugin and Jenkins Pipeline](https://www.cloudbees.com/blog/new-way-do-continuous-delivery-maven-and-jenkins-pipeline)
