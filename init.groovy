@@ -5,7 +5,7 @@ import com.cloudbees.plugins.credentials.impl.*
 import hudson.model.*
 import jenkins.model.*
 import hudson.plugins.groovy.*
-  
+
 println "Adding jdk"
 Jenkins.getInstance().getJDKs().add(new JDK("jdk8", "/usr/lib/jvm/java-8-openjdk-amd64"))
 
@@ -30,3 +30,11 @@ asList.add(new hudson.tasks.Maven.MavenInstallation('maven-3', null, [new hudson
 mavenPluginExtension.installations = asList
 
 mavenPluginExtension.save()
+
+println "Adding system credentials - Git user"
+
+String gitUser = new File('/usr/share/jenkins/gituser')?.text ?: "changeme"
+String gitPass = new File('/usr/share/jenkins/gitpass')?.text ?: "changeme"
+
+SystemCredentialsProvider.getInstance().getCredentials().add(new UsernamePasswordCredentialsImpl(CredentialsScope.GLOBAL, 'git', "GIT credential", gitUser, gitPass))
+SystemCredentialsProvider.getInstance().save()

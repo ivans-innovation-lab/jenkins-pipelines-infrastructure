@@ -3,6 +3,9 @@ services:
   jenkins:
     build:
       context: .
+      args:
+        gituser: "${PIPELINE_GIT_USERNAME}"
+        gitpass: "${PIPELINE_GIT_PASSWORD}"
     ports:
       - "9090:8080"
     volumes:
