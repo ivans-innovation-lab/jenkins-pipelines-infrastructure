@@ -33,3 +33,5 @@ RUN sed -i "s!__JOBS_REPO__!$jobs_repo!" /usr/share/jenkins/ref/jobs/seed-job/co
 
 RUN printf "%s" "${gituser}" > /usr/share/jenkins/gituser
 RUN printf "%s" "${gitpass}" > /usr/share/jenkins/gitpass
+
+USER jenkins
