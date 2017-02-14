@@ -8,8 +8,6 @@ services:
         gitpass: "${PIPELINE_GIT_PASSWORD}"
     ports:
       - "9090:8080"
-    volumes:
-      - /var/jenkins_home
     links:
       - artifactory
   artifactory:
