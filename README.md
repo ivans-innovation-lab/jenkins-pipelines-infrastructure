@@ -15,7 +15,7 @@ Jenkins 2.x with the [Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKI
   - [my-company-project-materialized-view](https://github.com/ivans-innovation-lab/my-company-project-materialized-view)
 
 
-## Run It
+## Running instructions
 
 ```
 $ ./start.sh gituser gitpassword
@@ -27,7 +27,7 @@ If it has not run yet, simply trigger it and see how the actual jobs get created
 
 Artifactory is available on [http://localhost:9091](http://localhost:9091)
 
-Please note that parrent maven [pom](https://github.com/ivans-innovation-lab/my-company-common/blob/master/pom.xml) file is configured to use the Artifactory.
+Parrent maven [pom](https://github.com/ivans-innovation-lab/my-company-common/blob/master/pom.xml) file is configured to use the Artifactory.
 
 ## References and further reading
 
