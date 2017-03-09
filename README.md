@@ -7,7 +7,7 @@ Jenkins 2.x with the [Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKI
  * there is a [seed-job](https://github.com/ivans-innovation-lab/jenkins-pipes-infra/blob/master/seedJob.xml) which runs periodically to ensure the aforementioned jobs exist in Jenkins
  * each project to be built by these jobs defines its own pipeline via [Pipeline-DSL](https://jenkins.io/doc/book/pipeline/syntax/) in a `Jenkinsfile`, see the:
 
-  - [my-company-monolithic-web](https://github.com/ivans-innovation-lab/my-company-monolithic-web)
+  - [my-company-monolith](https://github.com/ivans-innovation-lab/my-company-monolith)
   - [my-company-common](https://github.com/ivans-innovation-lab/my-company-common)
   - [my-company-blog-domain](https://github.com/ivans-innovation-lab/my-company-blog-domain)
   - [my-company-project-domain](https://github.com/ivans-innovation-lab/my-company-project-domain)
