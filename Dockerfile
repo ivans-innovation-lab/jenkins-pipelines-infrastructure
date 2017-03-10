@@ -2,7 +2,7 @@ FROM jenkins:2.32.2
 
 ARG gituser=changeme
 ARG gitpass=changeme
-ARG jobs_repo=https://github.com/ivans-innovation-lab/jenkins-pipelines-jobs.git
+ARG jobs_repo=https://github.com/ivans-innovation-lab/my-company-ci-jobs.git
 
 
 
