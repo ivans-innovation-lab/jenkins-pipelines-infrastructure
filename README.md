@@ -33,3 +33,4 @@ Artifactory is available on [http://localhost:9091](http://localhost:9091)
 ## References and further reading
 
 -  [Maven Release Plugin and Jenkins Pipeline](https://www.cloudbees.com/blog/new-way-do-continuous-delivery-maven-and-jenkins-pipeline)
+- [Declarative Pipeline: Notifications and Shared Libraries](https://jenkins.io/blog/2017/02/15/declarative-notifications)
