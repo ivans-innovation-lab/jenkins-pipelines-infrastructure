@@ -1,5 +1,5 @@
 
-# Jenkins (& Artifactory) Pipelines Infrastructure
+# Infrastructure - Jenkins And Artifactory
 
 Jenkins 2.x with the [Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Plugin) and Artifactory docker images to support the following scenario:
 
@@ -13,6 +13,8 @@ Jenkins 2.x with the [Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKI
   - [my-company-project-domain](https://github.com/ivans-innovation-lab/my-company-project-domain)
   - [my-company-blog-materialized-view](https://github.com/ivans-innovation-lab/my-company-blog-materialized-view)
   - [my-company-project-materialized-view](https://github.com/ivans-innovation-lab/my-company-project-materialized-view)
+  
+* artifacts are deployed on Artifactory instance. Parrent maven [pom](https://github.com/ivans-innovation-lab/my-company-common/blob/master/pom.xml) file is configured to use the Artifactory.
 
 
 ## Running instructions
@@ -27,7 +29,6 @@ If it has not run yet, simply trigger it and see how the actual jobs get created
 
 Artifactory is available on [http://localhost:9091](http://localhost:9091)
 
-Parrent maven [pom](https://github.com/ivans-innovation-lab/my-company-common/blob/master/pom.xml) file is configured to use the Artifactory.
 
 ## References and further reading
 
