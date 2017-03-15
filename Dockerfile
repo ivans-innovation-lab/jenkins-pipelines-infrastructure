@@ -16,7 +16,7 @@ RUN install-plugins.sh \
   git:3.0.1 \
   workflow-aggregator:2.5 \
   maven-plugin:2.14 \
-  script-security:1.25
+  script-security:1.27
 
 
 # create the seed job which spawns all other jobs
