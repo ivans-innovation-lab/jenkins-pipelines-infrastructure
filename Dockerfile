@@ -1,4 +1,4 @@
-FROM jenkins:2.32.2
+FROM jenkins:2.32.3
 
 ARG gituser=changeme
 ARG gitpass=changeme
@@ -16,8 +16,7 @@ RUN install-plugins.sh \
   git:3.0.1 \
   workflow-aggregator:2.5 \
   maven-plugin:2.14 \
-  script-security:1.25 \
-  docker-workflow
+  script-security:1.25
 
 
 # create the seed job which spawns all other jobs
