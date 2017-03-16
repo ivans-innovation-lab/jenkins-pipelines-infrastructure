@@ -28,6 +28,8 @@ COPY settings.xml /usr/share/jenkins/settings.xml
 USER root
 # allow to pass in the jobs repo as a --build-arg
 RUN sed -i "s!__JOBS_REPO__!$jobs_repo!" /usr/share/jenkins/ref/jobs/seed-job/config.xml
+RUN sed -i "s!__GIT_USER__!$gituser!" /usr/share/jenkins/settings.xml
+RUN sed -i "s!__GIT_PASSWORD__!$gitpass!" /usr/share/jenkins/settings.xml
 
 
 RUN printf "%s" "${gituser}" > /usr/share/jenkins/gituser
