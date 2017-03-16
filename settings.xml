@@ -11,5 +11,10 @@
 			<username>admin</username>
 			<password>password</password>
 		</server>
+		<server>
+			<id>mygit</id>
+			<username>__GIT_USER__</username>
+			<password>__GIT_PASSWORD__</password>
+		</server>
 	</servers>
 </settings>
