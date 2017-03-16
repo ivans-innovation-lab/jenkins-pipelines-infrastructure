@@ -13,7 +13,7 @@ RUN echo 2.0 > /usr/share/jenkins/ref/jenkins.install.InstallUtil.lastExecVersio
 # install minimum set of plugins
 RUN install-plugins.sh \
   job-dsl:1.57 \
-  git:3.0.1 \
+  git:3.1.0 \
   workflow-aggregator:2.5 \
   maven-plugin:2.14 \
   script-security:1.27
