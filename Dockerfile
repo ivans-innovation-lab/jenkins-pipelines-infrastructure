@@ -1,4 +1,4 @@
-FROM jenkins:2.32.3
+FROM jenkins:2.46.1
 
 ARG gituser=changeme
 ARG gitpass=changeme
@@ -12,6 +12,7 @@ RUN echo 2.0 > /usr/share/jenkins/ref/jenkins.install.InstallUtil.lastExecVersio
 
 # install minimum set of plugins
 RUN install-plugins.sh \
+  blueocean:1.0.1 \
   job-dsl:1.57 \
   git:3.1.0 \
   workflow-aggregator:2.5 \
