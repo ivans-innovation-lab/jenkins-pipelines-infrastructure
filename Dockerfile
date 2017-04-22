@@ -13,10 +13,10 @@ RUN echo 2.0 > /usr/share/jenkins/ref/jenkins.install.InstallUtil.lastExecVersio
 # install minimum set of plugins
 RUN install-plugins.sh \
   blueocean:1.0.1 \
-  job-dsl:1.57 \
-  git:3.1.0 \
+  job-dsl:1.61 \
+  git:3.3.0 \
   workflow-aggregator:2.5 \
-  maven-plugin:2.14 \
+  maven-plugin:2.15.1 \
   script-security:1.27 \
   pipeline-utility-steps:1.3.0
 
